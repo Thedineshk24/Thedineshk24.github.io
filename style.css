@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  /* height: 100vh; */
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+
+.mainheader {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.mainheader .logo img {
+  width: 20vw;
+  height: 90px;
+  padding-left: 50px;
+}
+
+.mainheader .menu ul {
+  width: 80vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 50px;
+  align-items: center;
+}
+
+.mainheader .menu ul {
+  list-style: none;
+}
+
+.mainheader .menu ul a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.mainheader .menu ul a:hover {
+  font-size: 29px;
+  color: #f97f51;
+}
+
+/* MAIN SECTION */
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .left {
+  padding-left: 50px;
+}
+
+main .left h2 {
+  font-size: 20px;
+  color: #242424;
+  margin-top: 100px;
+}
+
+main .left h1 {
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 12px 0;
+  /* font-size: 55px; */
+}
+main .left h1 strong {
+  color: #3b3b98;
+}
+
+main .left h1 strong:hover {
+  color: #fc5c65;
+}
+
+main .left p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+main .left button {
+  padding: 15px 45px;
+  text-align: center;
+  font-size: 14px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+
+main .left button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+#about {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 10px;
+  background-color: black;
+  width: 100vw;
+  height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+}
+
+footer p {
+  padding-top: 30px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #3b3b98;
+}
+
+footer p a:hover {
+  font-size: 29px;
+  color: #1da1f2;
+}
+
+/* mobile media query portrait*/
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* height: 100vh; */
+  }
+
+  header img {
+    display: none;
+  }
+
+  .mainheader {
+    width: 100%;
+  }
+
+  /* MAIN SECTION */
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .a__hide {
+    visibility: hidden;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  #about img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Footer */
+
+  footer {
+    width: 100%;
+  }
+}
