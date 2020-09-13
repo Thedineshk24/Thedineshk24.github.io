@@ -140,9 +140,13 @@ footer p a:hover {
 @media (max-width: 768px) {
 
  
-  header .mainheader {
+  header{
        display: none;
    }
+
+  .mainheader {
+      display : none;
+}
 
   /* MAIN SECTION */
 
