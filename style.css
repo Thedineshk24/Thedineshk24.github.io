@@ -139,25 +139,16 @@ footer p a:hover {
 /* mobile media query portrait*/
 @media (max-width: 768px) {
 
-  header img {
-    display: none;
-  }
-
-
-
-  .mainheader {
-    width: 100%;
-  }
+ 
+  header .mainheader {
+       display: none;
+   }
 
   /* MAIN SECTION */
 
   main {
     display: flex;
     flex-direction: column;
-  }
-
-  header {
-    visibility: hidden;
   }
 
   main .a__hide {
