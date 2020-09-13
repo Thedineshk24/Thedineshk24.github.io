@@ -138,8 +138,9 @@ footer p a:hover {
 
 /* mobile media query portrait*/
 @media (max-width: 768px) {
-  header {
-    display: none !important;
+ 
+  .menu {
+    display : none;
   }
 
   header img {
