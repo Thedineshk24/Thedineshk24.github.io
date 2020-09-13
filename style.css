@@ -138,14 +138,12 @@ footer p a:hover {
 
 /* mobile media query portrait*/
 @media (max-width: 768px) {
- 
-  .menu {
-    visibility: hidden;
-  }
 
   header img {
     display: none;
   }
+
+
 
   .mainheader {
     width: 100%;
@@ -156,6 +154,10 @@ footer p a:hover {
   main {
     display: flex;
     flex-direction: column;
+  }
+
+  header {
+    visibility: hidden;
   }
 
   main .a__hide {
